@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
-  def index
-    redirect_to search_path 
+  def index 
   end
 
 end
