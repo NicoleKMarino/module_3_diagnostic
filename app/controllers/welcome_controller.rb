@@ -1,12 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-    @location = location_params
-
+    redirect_to search_path 
   end
 
-  private
-
-  def location_params
-    params.permit(:zip_code)
-  end
 end
