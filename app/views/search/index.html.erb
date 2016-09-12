@@ -1,1 +1,12 @@
-<%= @info %>
+<ul>
+<%@stations.each do |station| %>
+<li>
+name: <%=station[:station_name] %>
+open: <%=station[:access_days_time] %>
+fuel type:<%=station[:fuel_type_code] %>
+address: <%=station[:street_address] %>
+zip: <%=station[:zip] %>
+distance <%=station[:distance] %>
+</li>
+<%end %>
+</ul>
